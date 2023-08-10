@@ -303,7 +303,7 @@ select {
     cursor: pointer;
   }
 
-  #container:has(#response) {
+  has-#response ,#container:has(#response) {
     width: 31rem;
     height: 32rem;
   }
