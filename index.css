@@ -303,6 +303,11 @@ select {
     cursor: pointer;
   }
 
+  #container:has(#response) {
+    width: 31rem;
+    height: 32rem;
+  }
+
 @media only screen and (max-width: 940px) {
 
   main {
@@ -340,6 +345,36 @@ select {
 
   #container-content-form {
     padding-right: 0rem;
+  }
+
+  #response {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content:end;
+    padding: 1.6rem;
+  }
+
+  #response h1 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  #response p span{
+    font-weight: bold;
+  }
+
+  #response input {
+    margin-top: 20rem;
+    height: 3.3rem;
+  }
+
+  #container:has(#response) {
+    width: 375px;
+    height: 840px;
   }
 
 }
